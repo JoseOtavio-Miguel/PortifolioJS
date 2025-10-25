@@ -1,0 +1,49 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.skillsContainer .hardSkills ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+
+.skillsContainer .hardSkills ul li img{
+    max-width: 5rem;
+    margin: 0.5rem;
+}
+
+.skillsContainer .softSkills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    
+    padding: 0;
+    list-style: none;
+}
+
+.skillsContainer .softSkills ul li{
+    margin-left: 0.5rem;
+    padding: .5rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .skillsContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr  ;
+
+        gap: 2rem;
+        align-items: start;
+    }
+}

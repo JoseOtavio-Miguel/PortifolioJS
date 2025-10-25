@@ -1,0 +1,115 @@
+.header { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header ::after {
+    display: inline-block;
+    content: '';
+    
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("/assets/icons/header.svg");
+}
+
+.header .photo {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.header .title {
+    font-family: 'Neue Machina', serif;
+    text-align: center;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: flex-start;
+    margin: .3rem;
+}
+
+.information p::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    margin-right: .5rem;
+}
+
+.information  a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.information a:hover {
+    text-decoration: underline;
+}
+
+.information .job {
+    background-image: url('/assets/icons/job.svg');
+    background-repeat: no-repeat;
+    /* background-position: left 17px; */
+    background-size: 1.125rem;
+}
+
+.information .location {
+    background-image: url('/assets/icons/location.svg');
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+}
+
+.information .email {
+    background-image: url('/assets/icons/email.svg');
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+}
+
+.information .phone {
+    background-image: url('/assets/icons/phone.svg');
+    background-repeat: no-repeat;
+    background-size: 1.125rem;
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information";
+    }
+
+    .header .photo {
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    .header .title {
+        grid-area: title;
+        text-align: start;
+        max-width: 200px;
+    }
+
+    .header .information {
+        grid-area: information;
+    }
+}
