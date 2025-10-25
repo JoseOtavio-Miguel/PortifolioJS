@@ -1,7 +1,5 @@
 # 📱 Portfólio Profissional — José Otávio S. Miguel
 
-![Preview Desktop](./assets/img/preview-desktop.png)
-
 > 🚀 **Projeto desenvolvido com a abordagem _Mobile First_ e design 100% responsivo.**  
 > Este portfólio foi criado para apresentar minhas **habilidades técnicas e pessoais**, de forma moderna e adaptável a qualquer dispositivo.
 
