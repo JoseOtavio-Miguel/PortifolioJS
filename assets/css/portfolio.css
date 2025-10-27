@@ -51,3 +51,9 @@
 .portfolio li a:hover {
     text-decoration: underline;
 }
+
+.github-icon {
+    width: 20px;   /* define a largura do ícone */
+    height: 20px;  /* define a altura do ícone */
+    vertical-align: middle; /* opcional, alinha com o texto */
+}
