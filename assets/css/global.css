@@ -4,15 +4,12 @@
     
 }
 
-@font-face {
-    font-family: 'Neue Machina';
-    src: url('./assets/fonts/neue-machina-regular.otf');
-}
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('./assets/fonts/neue-machina-regular.otf');
+    font-family: 'NeueMachina';
+    src: url('./assets/fonts/NeueMachina-Regular.otf') format('opentype');
 }
+
 
 body {
     background-color: #1b1a1a;
